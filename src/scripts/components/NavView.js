@@ -3,6 +3,7 @@ import Actions from '../actions/actions.js'
 
 const NavView = React.createClass({
   _handleNavClick: function(e){
+    console.log('this is dataset>>>', e.target.dataset)
     var selectedMenuBtn = e.target.dataset['menu']
 
     Actions.toggleAppView(selectedMenuBtn)
